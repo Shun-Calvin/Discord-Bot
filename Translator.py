@@ -23,38 +23,38 @@ async def on_reaction_add(reaction, user):
 #Japanese 
         if emojiid == b'\\U0001f1ef\\U0001f1f5': #if reacted emoji is Japan 
             phrase = reaction.message.content
-            trans_ja = ts.google(phrase, to_language='ja')
+            trans_ja = ts.[translator](phrase, to_language='ja')
             await reaction.message.channel.send(trans_ja)
 
 #English
         if emojiid == b'\\U0001f1fa\\U0001f1f8': #if reacted emoji is US
             phrase = reaction.message.content
-            trans_en = ts.google(phrase, to_language='en')
+            trans_en = ts.[translator](phrase, to_language='en')
             await reaction.message.channel.send(trans_en)
 
 
 #Chinese
         if emojiid == b'\\U0001f1ed\\U0001f1f0': #if reacted emoji is HK 
             phrase = reaction.message.content
-            trans_hk = ts.google(phrase, to_language='zh-TW')
+            trans_hk = ts.[translator](phrase, to_language='zh-TW')
             await reaction.message.channel.send(trans_hk)
 
 #Korean
         if emojiid == b'\\U0001f1f0\\U0001f1f7': #if reacted emoji is Korea 
             phrase = reaction.message.content
-            trans_ko = ts.google(phrase, to_language='ko')
+            trans_ko = ts.[translator](phrase, to_language='ko')
             await reaction.message.channel.send(trans_ko)
 
 #Spanish
         if emojiid == b'\\U0001f1ea\\U0001f1f8': #if reacted emoji is Spain 
             phrase = reaction.message.content
-            trans_es = ts.google(phrase, to_language='es')
+            trans_es = ts.[translator](phrase, to_language='es')
             await reaction.message.channel.send(trans_es)
             
 #Portuguese 
         if emojiid == b'\\U0001f1f5\\U0001f1f9': #if reacted emoji is Portugual  
             phrase = reaction.message.content
-            trans_pt = ts.google(phrase, to_language='pt')
+            trans_pt = ts.[translator](phrase, to_language='pt')
             await reaction.message.channel.send(trans_pt)
 
 client.run([Token])
